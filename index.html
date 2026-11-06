@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>个人介绍</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+      background: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+      padding: 40px;
+    }
+
+    h1 {
+      font-size: 28px;
+      text-align: center;
+      margin-bottom: 32px;
+      color: #1a1a1a;
+      letter-spacing: 2px;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin: 28px 0 16px;
+      padding-left: 12px;
+      border-left: 4px solid #4a90d9;
+      color: #1a1a1a;
+    }
+
+    h2:first-of-type {
+      margin-top: 0;
+    }
+
+    /* 基础信息表格 */
+    .info-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .info-table td {
+      vertical-align: middle;
+      padding: 8px 0;
+    }
+
+    .info-table .info-text strong {
+      display: block;
+      font-size: 16px;
+      font-weight: 500;
+      margin: 6px 0;
+    }
+
+    .info-table .info-photo {
+      width: 150px;
+      text-align: center;
+    }
+
+    .info-table .info-photo img {
+      border-radius: 8px;
+      object-fit: cover;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    }
+
+    /* 列表 */
+    ul {
+      list-style: none;
+      padding-left: 12px;
+    }
+
+    ul li {
+      position: relative;
+      padding: 6px 0 6px 20px;
+      font-size: 16px;
+    }
+
+    ul li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #4a90d9;
+    }
+
+    /* 标签 */
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tags .tag {
+      padding: 4px 14px;
+      background: #eef4fb;
+      color: #4a90d9;
+      border-radius: 999px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 24px 20px;
+      }
+
+      .info-table .info-photo {
+        width: 110px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>个人介绍</h1>
+
+    <h2>基础信息</h2>
+    <table class="info-table">
+      <tr>
+        <td class="info-text">
+          <strong>昵称：pony</strong>
+          <strong>城市：深圳</strong>
+          <strong>身份：无业游民</strong>
+          <strong>联系方式：QQ1016343363</strong>
+        </td>
+        <td class="info-photo">
+          <!-- 照片：如需更换，请替换下方 src 中的文件名 -->
+          <img src="./img_v3_02176_4169f98f-c16f-4720-be25-42aa63aad6eg.jpg" alt="照片" width="120" height="168">
+        </td>
+      </tr>
+    </table>
+
+    <h2>过往经历</h2>
+    <ul>
+      <li>第一份职业：数据仓库工程师</li>
+      <li>第二份职业：流程数字化工程师</li>
+    </ul>
+
+    <h2>专业技能</h2>
+    <ul>
+      <li>软件：mySQL、SQL server、python、spark、</li>
+      <li>方向：数据库工程师、数据分析师、数据可视化看板</li>
+      <li>正在学：vibe coding、摄影</li>
+    </ul>
+
+    <h2>兴趣爱好</h2>
+    <ul>
+      <li>游戏：LOL、神之亵渎、求生之路、饥荒</li>
+      <li>影音：攻壳机动队系列、巨人</li>
+      <li>书籍：《都柏林人》</li>
+    </ul>
+
+    <h2>标签</h2>
+    <div class="tags">
+      <span class="tag">互联网居民</span>
+      <span class="tag">电波系</span>
+      <span class="tag">串子</span>
+      <span class="tag">轻度cult片</span>
+    </div>
+  </div>
+</body>
+</html>
